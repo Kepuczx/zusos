@@ -1,0 +1,45 @@
+.main{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.main hr{
+    border-color: black;
+}
+
+.main-container{
+    position: relative;
+    width: 100%;
+    height: 30vh;
+    align-items: center;
+    
+    
+}
+
+
+.main-container img{
+    min-width: 320px;
+    float: left;
+    border-radius: 1%;
+    display: block;
+    width: 45%;
+    max-height: 210px;
+    max-width: 410px;
+}
+.main-container p{
+    color: aliceblue;
+    float: right;
+    width: 50%;
+    max-height: 200px;
+    min-width: 200px;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+.main-container h1{
+    margin-bottom: 10px;
+    color: aqua;
+}
+.main-container hr{
+    margin: 20px 0;
+    position: static;
+}
