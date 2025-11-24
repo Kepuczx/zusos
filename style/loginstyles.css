@@ -6,8 +6,8 @@
 
 body{
     background-image: url("../images/background.jpg");
-    background-repeat: no-repeat;
-    background-size: 100vw 120vh;
+    background-repeat: repeat;
+    background-size: 100% 100%;
 }
 .login-container{
     width: 650px;
@@ -60,6 +60,15 @@ form h1{
     background-size: 25px 25px;
     background-position: 15px;
 }
+#show{
+    color: rgb(0, 0, 0);
+    position: absolute;
+    right: 150px;
+    bottom: 198px;
+    cursor: pointer;
+}
+
+
 #repassword{
     background-image: url("../images/lock-icon.svg");
     background-repeat: no-repeat;

@@ -10,3 +10,18 @@ document.getElementById("loginForm").addEventListener("submit", function(e) {
         errorSpan.textContent = "Błędny login lub hasło!"
     }
 });
+
+
+const show = document.querySelector('#show');
+const password = document.querySelector('#password');
+
+show.addEventListener("click", ()=>{
+    if(password.type==="password"){
+        password.type = "text";
+        show.textContent = "Ukryj";
+    }
+    else{
+        password.type="password";
+        show.textContent = "Pokaż";
+    }
+})
