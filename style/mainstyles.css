@@ -40,6 +40,10 @@ a {
   position: fixed;
   right: 20px;
   cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none; 
+  -moz-user-select: none;    
+  -ms-user-select: none; 
 }
 
 .hamburger {
@@ -95,6 +99,10 @@ a {
     display: block; /* Pokaż ikonę */
     margin-left: 20px;
     font-size: 35px;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;    
+    -ms-user-select: none; 
   }
   nav {
     background-position: center;

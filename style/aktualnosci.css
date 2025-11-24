@@ -13,7 +13,6 @@
     height: 30vh;
     align-items: center;
     
-    
 }
 
 
@@ -23,15 +22,14 @@
     border-radius: 1%;
     display: block;
     width: 45%;
-    max-height: 210px;
-    max-width: 410px;
+
 }
 .main-container p{
     color: aliceblue;
     float: right;
     width: 50%;
     max-height: 200px;
-    min-width: 200px;
+    min-width: 320px;
     overflow-y: auto;
     overflow-x: auto;
 }
@@ -42,4 +40,17 @@
 .main-container hr{
     margin: 20px 0;
     position: static;
+}
+@media (max-width:830px) {
+    .main-container img{
+        float: none;
+        margin: 0 auto;
+    }
+    .main-container p{
+        float:none;
+        margin: 0 auto;
+        margin-top: 20px;
+        text-align: center;
+    }
+    
 }
