@@ -7,7 +7,10 @@ html{
 }
 body {
   background-color: #191d21;
-  height: 100%;
+  min-height: 100vh;       /* zawsze co najmniej wysokość ekranu */
+  display: flex;
+  flex-direction: column;  /* kolumnowy układ */
+  margin: 0;
 }
 nav {
   z-index: 3;
@@ -172,16 +175,13 @@ a {
   border-radius: 0 0 0 10px;
 }
 
-/* kontent */
+/* MAIN CONTENT */
 
 .main {
-  position: flex;
-  height: 100%;
+  flex: 1; /* zajmuje całą wolną przestrzeń */
   width: 80%;
   background-color: #2c343b;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 60px;
+  margin: 60px auto 0 auto; /* top margin dla nav */
   border-radius: 5px 5px 0 0;
 }
 
@@ -245,13 +245,11 @@ footer {
   width: 100%;
   min-height: 10vh;
   color: aliceblue;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
   box-sizing: border-box;
-  
 }
 
 footer address {
