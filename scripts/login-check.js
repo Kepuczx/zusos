@@ -1,8 +1,11 @@
+const show = document.querySelector('#show');
+const password = document.querySelector('#password');
+
 document.getElementById("loginForm").addEventListener("submit", function(e) {
     e.preventDefault();
 
     const login = document.getElementById("login").value;
-    const haslo = document.getElementById("password").value;
+    const haslo = password.value;
     const errorSpan = document.querySelector('.blad');
     if (login === "admin" && haslo === "admin") {
         window.location.href = "../index.html";
@@ -10,10 +13,6 @@ document.getElementById("loginForm").addEventListener("submit", function(e) {
         errorSpan.textContent = "Błędny login lub hasło!"
     }
 });
-
-
-const show = document.querySelector('#show');
-const password = document.querySelector('#password');
 
 show.addEventListener("click", ()=>{
     if(password.type==="password"){
@@ -25,3 +24,4 @@ show.addEventListener("click", ()=>{
         show.textContent = "Pokaż";
     }
 })
+
