@@ -9,6 +9,8 @@ hamburger.onclick = function(event) {
   event.stopPropagation(); // zatrzymuje kliknięcie, żeby nie zamknęło menu od razu
   nav_links.style.display = 
     nav_links.style.display === "block" ? "none" : "block";
+
+  hamburger.classList.toggle('active');
 };
 
 // pokaz/ukryj menu avatara
@@ -23,6 +25,7 @@ avatar.onclick = function(event) {
 document.addEventListener("click", (event) => {
   if (!nav_links.contains(event.target) && event.target !== hamburger) {
     nav_links.style.display = "none";
+    hamburger.classList.remove('active');
   }
   if (!avatar_links.contains(event.target) && event.target !== avatar) {
     avatar_links.style.display = "none";
