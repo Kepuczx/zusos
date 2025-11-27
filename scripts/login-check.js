@@ -2,14 +2,13 @@ const show = document.querySelector('#show');
 const password = document.querySelector('#password');
 
 document.getElementById("loginForm").addEventListener("submit", function(e) {
-    e.preventDefault();
-
     const login = document.getElementById("login").value;
     const haslo = password.value;
     const errorSpan = document.querySelector('.blad');
     if (login === "admin" && haslo === "admin") {
-        window.location.href = "../index.html";
+        
     } else {
+        e.preventDefault();
         errorSpan.textContent = "Błędny login lub hasło!"
     }
 });
